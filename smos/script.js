@@ -13,5 +13,3 @@ function lightMode(){
     x[i].style.backgroundColor = "#e1befe";
   }
 }
-
-// no dm lm support rn
