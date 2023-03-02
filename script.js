@@ -1,17 +1,28 @@
-function darkMode(){
-  document.getElementById('body').style.backgroundColor = '#2b2b2b';
-  var x = document.getElementsByClassName("button");
-  for (var i = 0; i < x.length; i++) {
-    x[i].style.backgroundColor = "white";
-  }
-}
+const letters = "abcdefghijklmnopqrstuvwxyz";
 
-function lightMode(){
-  document.getElementById('body').style.backgroundColor = 'pink';
-  var x = document.getElementsByClassName("button");
-  for (var i = 0; i < x.length; i++) {
-    x[i].style.backgroundColor = "#e1befe";
-  }
-}
+let interval = null;
 
-// no dm lm support rn
+document.getElementById("maintitle").onmouseover = event => {  
+  let iteration = 0;
+  
+  clearInterval(interval);
+  
+  interval = setInterval(() => {
+    event.target.innerText = event.target.innerText
+      .split("")
+      .map((letter, index) => {
+        if(index < iteration) {
+          return event.target.dataset.value[index];
+        }
+      
+        return letters[Math.floor(Math.random() * 26)]
+      })
+      .join("");
+    
+    if(iteration >= event.target.dataset.value.length){ 
+      clearInterval(interval);
+    }
+    
+    iteration++;
+  }, 30);
+}
