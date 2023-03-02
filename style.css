@@ -114,3 +114,22 @@ a {
   max-width: 200px;
 }
 
+.topnav {
+  background-image: linear-gradient(to right, pink, gray);
+  width: 100%;
+  transition: 1s;
+}
+
+.topnav:hover {
+  background-image: linear-gradient(to right, pink, black);
+}
+
+.navbutton {
+  opacity: 0.5;
+  transition: 1s;
+}
+
+.navbutton:hover {
+  opacity: 1;
+}
+
