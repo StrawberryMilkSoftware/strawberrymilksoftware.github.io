@@ -10,7 +10,7 @@ function randomText() {
   clearInterval(interval);
   
   interval = setInterval(() => {
-    elementtitle.innerText = event.target.innerText
+    elementtitle.innerText = elementtitle.innerText
       .split("")
       .map((letter, index) => {
         if(index < iteration) {
