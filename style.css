@@ -122,12 +122,13 @@ a {
   text-align: center;
   border: 3px solid gray;
   border-radius: 15px;
-  
+  height: 5%;
 }
 
 .topnav:hover {
   background-image: linear-gradient(to right, pink, black);
   width: 100%;
+  height: auto;
 }
 
 .navbutton {
@@ -144,5 +145,21 @@ a {
 
 .navbutton:hover {
   opacity: 1;
+}
+
+.expandnav {
+  background-image: linear-gradient(to right, pink, gray);
+  width: 10%;
+  margin: auto;
+  transition: 1s;
+  text-align: center;
+  border: 3px solid gray;
+  border-radius: 15px;
+  
+}
+
+.expandnav:hover {
+  background-image: linear-gradient(to right, pink, black);
+  width: 100%;
 }
 
