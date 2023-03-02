@@ -116,12 +116,13 @@ a {
 
 .topnav {
   background-image: linear-gradient(to right, pink, gray);
-  width: 100%;
+  width: 10%;
   transition: 1s;
 }
 
 .topnav:hover {
   background-image: linear-gradient(to right, pink, black);
+  width: 100%
 }
 
 .navbutton {
