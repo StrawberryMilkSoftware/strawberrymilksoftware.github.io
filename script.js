@@ -25,6 +25,6 @@ function randomText() {
       clearInterval(interval);
     }
     
-    iteration++;
+    iteration += 3;
   }, 30);
 }
